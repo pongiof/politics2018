@@ -1,0 +1,7 @@
+cron:
+- description: load new tweets hourly
+  url: /refresh
+  schedule: every 1 hours
+  retry_parameters:
+      min_backoff_seconds: 2.5
+      max_doublings: 5
